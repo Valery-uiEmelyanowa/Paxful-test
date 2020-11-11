@@ -1,7 +1,9 @@
+const path = require('path')
+
 class Files {
     constructor() {
         this.nameFile = 'test.txt';
-        this.path = __dirname + '/' + this.nameFile;
+        this.path =path.resolve('testData/' + this.nameFile);
     }
 }
 
